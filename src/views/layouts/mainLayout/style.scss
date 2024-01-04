@@ -1,0 +1,15 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.bgNavbar{
+    font-family: fantasy !important;
+    background-color: rgba(190, 190, 204, 0.979) !important;
+}
+
+.titleNavbar{
+    position: relative;
+    left: 1em;
+    margin-right: 2em;
+}
