@@ -1,7 +1,16 @@
 import React from "react";
-import "./style.scss"
+import "./style.scss";
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () => {
+
+    let history = useNavigate();
+
+    const onLogin = () => {
+        history("/login");
+    };
+
     return (
         <div className="homeContainer">
             <div className="carousel-container">
@@ -28,7 +37,7 @@ const Home = () => {
             </div>
             </div>
             <div className="buttonContainer">
-                <button type="button" className="btn btn-success">Iniciar Sesion</button>
+                <button type="button" onClick={()=>onLogin()} className="btn btn-success">Iniciar Sesion</button>
                 <button type="button" className="btn btn-secondary">Registrarse Como Empresa</button>
             </div>
            
